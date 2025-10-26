@@ -36,7 +36,7 @@ export default function HeroSection({
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href={primaryCTA.href}>
+            <Link href={primaryCTA.href} asChild>
               <Button
                 size="lg"
                 variant="default"
@@ -47,7 +47,7 @@ export default function HeroSection({
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link href={secondaryCTA.href}>
+            <Link href={secondaryCTA.href} asChild>
               <Button
                 size="lg"
                 variant="outline"

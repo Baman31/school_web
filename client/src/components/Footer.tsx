@@ -62,10 +62,8 @@ export default function Footer() {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href}>
-                    <a className="text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid={`footer-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}>
-                      {link.name}
-                    </a>
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid={`footer-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}>
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -77,10 +75,8 @@ export default function Footer() {
             <ul className="space-y-2">
               {resources.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href}>
-                    <a className="text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid={`footer-resource-${link.name.toLowerCase().replace(/\s+/g, '-')}`}>
-                      {link.name}
-                    </a>
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid={`footer-resource-${link.name.toLowerCase().replace(/\s+/g, '-')}`}>
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -115,10 +111,8 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               {legal.map((link) => (
-                <Link key={link.name} href={link.href}>
-                  <a className="text-sm text-muted-foreground hover:text-foreground" data-testid={`footer-legal-${link.name.toLowerCase().replace(/\s+/g, '-')}`}>
-                    {link.name}
-                  </a>
+                <Link key={link.name} href={link.href} className="text-sm text-muted-foreground hover:text-foreground" data-testid={`footer-legal-${link.name.toLowerCase().replace(/\s+/g, '-')}`}>
+                  {link.name}
                 </Link>
               ))}
             </div>

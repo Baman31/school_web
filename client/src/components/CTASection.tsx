@@ -26,7 +26,7 @@ export default function CTASection({
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
           <p className="text-lg md:text-xl mb-8 opacity-90">{description}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href={primaryButton.href}>
+            <Link href={primaryButton.href} asChild>
               <Button
                 size="lg"
                 variant={variant === "primary" ? "secondary" : "default"}
@@ -38,7 +38,7 @@ export default function CTASection({
               </Button>
             </Link>
             {secondaryButton && (
-              <Link href={secondaryButton.href}>
+              <Link href={secondaryButton.href} asChild>
                 <Button
                   size="lg"
                   variant="outline"

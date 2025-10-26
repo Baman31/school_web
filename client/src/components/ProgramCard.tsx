@@ -29,7 +29,7 @@ export default function ProgramCard({ title, description, icon: Icon, image, hre
         <CardDescription className="text-sm leading-relaxed">{description}</CardDescription>
       </CardHeader>
       <CardContent>
-        <Link href={href}>
+        <Link href={href} asChild>
           <Button variant="ghost" className="group p-0 h-auto hover-elevate" data-testid={`button-learn-more-${title.toLowerCase().replace(/\s+/g, '-')}`}>
             Learn More
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
