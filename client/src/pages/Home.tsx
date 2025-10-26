@@ -167,13 +167,13 @@ export default function Home() {
       
       <StatsBar stats={stats} />
       
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="py-12 sm:py-16 md:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             title="Our Programs"
             subtitle="Comprehensive education programs designed to nurture every aspect of student development from academics to character building."
           />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {programs.map((program, index) => (
               <ProgramCard key={index} {...program} />
             ))}
@@ -181,13 +181,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="py-12 sm:py-16 md:py-20 bg-card">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             title="World-Class Facilities"
             subtitle="Modern infrastructure designed to provide the best learning environment for our students."
           />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {facilities.map((facility, index) => (
               <FacilityCard key={index} {...facility} />
             ))}
@@ -195,13 +195,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="py-12 sm:py-16 md:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             title="What Parents & Students Say"
             subtitle="Hear from our community about their experiences at Excellence Academy."
           />
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {testimonials.map((testimonial, index) => (
               <TestimonialCard key={index} {...testimonial} />
             ))}
@@ -209,13 +209,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="py-12 sm:py-16 md:py-20 bg-card">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             title="Meet Our Expert Faculty"
             subtitle="Learn from passionate educators with years of experience and proven track records."
           />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {faculty.map((member, index) => (
               <FacultyCard key={index} {...member} />
             ))}
@@ -223,13 +223,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="py-12 sm:py-16 md:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             title="Upcoming Events"
             subtitle="Stay updated with our latest events, activities, and important dates."
           />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {events.map((event, index) => (
               <EventCard key={index} {...event} />
             ))}

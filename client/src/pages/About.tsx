@@ -78,11 +78,11 @@ export default function About() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Excellence Academy</h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">About Excellence Academy</h1>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
               Committed to nurturing young minds for over 25 years with academic excellence, 
               character development, and holistic growth.
             </p>
@@ -91,14 +91,14 @@ export default function About() {
       </section>
 
       {/* Our Story Section */}
-      <section id="story" className="py-16">
-        <div className="container mx-auto px-4">
+      <section id="story" className="py-12 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6">
           <SectionHeader
             subtitle="Our Journey"
             title="Our Story"
             description="A legacy of educational excellence spanning over two decades"
           />
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
               <img 
                 src={assemblyImage} 
@@ -106,8 +106,8 @@ export default function About() {
                 className="rounded-lg shadow-lg w-full h-auto"
               />
             </div>
-            <div className="space-y-6">
-              <p className="text-lg text-muted-foreground">
+            <div className="space-y-4 sm:space-y-6">
+              <p className="text-base sm:text-lg text-muted-foreground">
                 Founded in 1999, Excellence Academy began with a vision to provide world-class 
                 education that nurtures both academic achievement and character development. What 
                 started with 200 students has grown into a thriving institution serving over 3,500 
@@ -136,9 +136,9 @@ export default function About() {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <section className="py-12 sm:py-16 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
             <Card className="hover-elevate">
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-4">
@@ -174,14 +174,14 @@ export default function About() {
       </section>
 
       {/* Core Values Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
+      <section className="py-12 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6">
           <SectionHeader
             subtitle="What We Stand For"
             title="Our Core Values"
             description="The principles that guide everything we do"
           />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {values.map((value, index) => (
               <Card key={index} className="hover-elevate text-center">
                 <CardContent className="p-6">
@@ -198,8 +198,8 @@ export default function About() {
       </section>
 
       {/* Leadership Team Section */}
-      <section id="team" className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
+      <section id="team" className="py-12 sm:py-16 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6">
           <SectionHeader
             subtitle="Meet Our Leaders"
             title="Leadership Team"
