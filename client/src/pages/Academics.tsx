@@ -123,8 +123,8 @@ export default function Academics() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-12 sm:py-16 md:py-20">
-        <div className="container mx-auto px-4 sm:px-6">
+      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background h-[70vh] sm:h-[75vh] md:h-[80vh] lg:h-[85vh] flex items-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Academic Excellence</h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
@@ -136,7 +136,7 @@ export default function Academics() {
 
       {/* Programs Section */}
       <section className="py-12 sm:py-16">
-        <div className="container mx-auto px-4 sm:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="From Nursery to Class XII"
             title="Our Academic Programs"
@@ -153,7 +153,7 @@ export default function Academics() {
       {/* Skip to avoid editing too much - find the next major section */}
       {/* Subjects Section - needs to be found and updated */}
       <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Academic Programs</h1>
             <p className="text-xl text-muted-foreground mb-8">
@@ -166,7 +166,7 @@ export default function Academics() {
 
       {/* Academic Programs Section */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="Learning Pathways"
             title="Our Academic Programs"
@@ -182,7 +182,7 @@ export default function Academics() {
 
       {/* Senior Secondary Streams */}
       <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="Classes XI-XII"
             title="Senior Secondary Streams"
@@ -311,7 +311,7 @@ export default function Academics() {
 
       {/* Subjects Section */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="Comprehensive Learning"
             title="Subjects & Curriculum"
@@ -339,7 +339,7 @@ export default function Academics() {
 
       {/* Features Section */}
       <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="Why Choose Us"
             title="Academic Excellence Features"
@@ -360,7 +360,7 @@ export default function Academics() {
 
       {/* Achievements Section */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="Our Pride"
             title="Academic Achievements 2023-24"

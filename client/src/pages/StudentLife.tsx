@@ -153,8 +153,8 @@ export default function StudentLife() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-12 sm:py-16 md:py-20">
-        <div className="container mx-auto px-4 sm:px-6">
+      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background h-[70vh] sm:h-[75vh] md:h-[80vh] lg:h-[85vh] flex items-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Student Life</h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
@@ -166,7 +166,7 @@ export default function StudentLife() {
 
       {/* Clubs & Activities Section */}
       <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Student Life</h1>
             <p className="text-xl text-muted-foreground mb-8">
@@ -179,7 +179,7 @@ export default function StudentLife() {
 
       {/* Clubs & Activities Section */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="Get Involved"
             title="Clubs & Activities"
@@ -215,7 +215,7 @@ export default function StudentLife() {
 
       {/* House System Section */}
       <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="Team Spirit"
             title="House System"
@@ -244,7 +244,7 @@ export default function StudentLife() {
 
       {/* Events Section */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="Celebrate Together"
             title="Annual Events"
@@ -260,7 +260,7 @@ export default function StudentLife() {
 
       {/* Additional Highlights Section */}
       <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="More Opportunities"
             title="Beyond the Classroom"
@@ -281,7 +281,7 @@ export default function StudentLife() {
 
       {/* Student Testimonial Section */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg p-12">
             <Users className="w-12 h-12 text-primary mx-auto mb-4" />
             <blockquote className="text-xl italic mb-4">

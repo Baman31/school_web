@@ -78,8 +78,8 @@ export default function About() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-12 sm:py-16 md:py-20">
-        <div className="container mx-auto px-4 sm:px-6">
+      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background h-[70vh] sm:h-[75vh] md:h-[80vh] lg:h-[85vh] flex items-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">About Excellence Academy</h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
@@ -92,7 +92,7 @@ export default function About() {
 
       {/* Our Story Section */}
       <section id="story" className="py-12 sm:py-16">
-        <div className="container mx-auto px-4 sm:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="Our Journey"
             title="Our Story"
@@ -137,7 +137,7 @@ export default function About() {
 
       {/* Mission & Vision Section */}
       <section className="py-12 sm:py-16 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
             <Card className="hover-elevate">
               <CardContent className="p-8">
@@ -175,7 +175,7 @@ export default function About() {
 
       {/* Core Values Section */}
       <section className="py-12 sm:py-16">
-        <div className="container mx-auto px-4 sm:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="What We Stand For"
             title="Our Core Values"
@@ -199,7 +199,7 @@ export default function About() {
 
       {/* Leadership Team Section */}
       <section id="team" className="py-12 sm:py-16 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="Meet Our Leaders"
             title="Leadership Team"
@@ -229,7 +229,7 @@ export default function About() {
 
       {/* Certifications Section */}
       <section id="certifications" className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="Quality Assurance"
             title="Certifications & Accreditations"
