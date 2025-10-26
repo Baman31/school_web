@@ -65,10 +65,8 @@ export default function Header() {
                     </Button>
                     <div className="absolute left-0 mt-1 w-48 rounded-lg border bg-popover p-2 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
                       {item.submenu.map((subitem) => (
-                        <Link key={subitem.name} href={subitem.href}>
-                          <a className="block px-3 py-2 text-sm rounded-md hover-elevate" data-testid={`nav-sub-${subitem.name.toLowerCase().replace(/\s+/g, '-')}`}>
-                            {subitem.name}
-                          </a>
+                        <Link key={subitem.name} href={subitem.href} className="block px-3 py-2 text-sm rounded-md hover-elevate" data-testid={`nav-sub-${subitem.name.toLowerCase().replace(/\s+/g, '-')}`}>
+                          {subitem.name}
                         </Link>
                       ))}
                     </div>
@@ -76,7 +74,7 @@ export default function Header() {
                 );
               }
               return (
-                <Link key={item.name} href={item.href}>
+                <Link key={item.name} href={item.href} asChild>
                   <Button
                     variant="ghost"
                     className={`hover-elevate ${location === item.href ? "bg-accent" : ""}`}
@@ -90,12 +88,12 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Link href="/admissions">
+            <Link href="/admissions" asChild>
               <Button variant="default" className="hidden md:flex" data-testid="button-apply-now">
                 Apply Now
               </Button>
             </Link>
-            <Link href="/contact">
+            <Link href="/contact" asChild>
               <Button variant="outline" className="hidden sm:flex" data-testid="button-schedule-visit">
                 Schedule Visit
               </Button>
@@ -119,7 +117,7 @@ export default function Header() {
           <nav className="container mx-auto px-4 py-4 space-y-2">
             {navigation.map((item) => (
               <div key={item.name}>
-                <Link href={item.href}>
+                <Link href={item.href} asChild>
                   <Button
                     variant="ghost"
                     className="w-full justify-start hover-elevate"
@@ -132,7 +130,7 @@ export default function Header() {
                 {item.submenu && (
                   <div className="ml-4 mt-2 space-y-1">
                     {item.submenu.map((subitem) => (
-                      <Link key={subitem.name} href={subitem.href}>
+                      <Link key={subitem.name} href={subitem.href} asChild>
                         <Button
                           variant="ghost"
                           size="sm"
@@ -149,7 +147,7 @@ export default function Header() {
               </div>
             ))}
             <div className="pt-4 space-y-2">
-              <Link href="/admissions">
+              <Link href="/admissions" asChild>
                 <Button
                   variant="default"
                   className="w-full"
@@ -159,7 +157,7 @@ export default function Header() {
                   Apply Now
                 </Button>
               </Link>
-              <Link href="/contact">
+              <Link href="/contact" asChild>
                 <Button
                   variant="outline"
                   className="w-full"
