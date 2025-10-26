@@ -21,11 +21,10 @@ import teacherMale from "@assets/generated_images/Male_teacher_professional_port
 import assemblyImage from "@assets/generated_images/School_community_assembly_gathering_6e0ddf44.png";
 
 export default function Home() {
-  //todo: remove mock functionality
   const stats = [
-    { value: "5000+", label: "Students Enrolled" },
-    { value: "98%", label: "Board Results" },
-    { value: "150+", label: "Expert Faculty" },
+    { value: "3500+", label: "Students Enrolled" },
+    { value: "98.5%", label: "CBSE Board Results" },
+    { value: "120+", label: "Qualified Faculty" },
     { value: "25+", label: "Years of Excellence" },
   ];
 
@@ -83,45 +82,45 @@ export default function Home() {
 
   const testimonials = [
     {
-      quote: "Excellence Academy has transformed my daughter's approach to learning. The teachers are exceptional and truly care about each student's growth and development.",
-      author: "Priya Sharma",
-      role: "Parent of Grade 8 Student",
+      quote: "Excellence Academy has transformed my daughter's approach to learning. The dedicated teachers truly care about each student's holistic development and academic excellence.",
+      author: "Mrs. Priya Sharma",
+      role: "Parent of Class VIII Student",
     },
     {
-      quote: "The facilities are world-class and the focus on both academics and extracurricular activities has helped my son become a well-rounded individual with strong values.",
-      author: "Rajesh Kumar",
-      role: "Parent of Grade 10 Student",
+      quote: "The world-class infrastructure and emphasis on both academics and co-curricular activities has shaped my son into a confident and well-rounded individual.",
+      author: "Mr. Rajesh Kumar",
+      role: "Parent of Class X Student",
     },
     {
-      quote: "I'm grateful for the guidance and support from the faculty. The school has prepared me well for my future and I've made lifelong friends here.",
+      quote: "I am grateful for the constant guidance from our teachers. The school has prepared me exceptionally well for competitive exams and life beyond academics.",
       author: "Ananya Patel",
-      role: "Grade 12 Student",
+      role: "Class XII Student",
     },
   ];
 
   const faculty = [
     {
-      name: "Dr. Sarah Johnson",
+      name: "Dr. Meera Krishnan",
       position: "Head of Mathematics Department",
-      qualification: "Ph.D. in Mathematics, MIT",
+      qualification: "Ph.D. Mathematics, IIT Delhi",
       experience: "15",
-      specialization: ["Advanced Calculus", "Statistics", "Math Olympiad"],
+      specialization: ["Advanced Mathematics", "IIT-JEE Coaching", "Math Olympiad"],
       avatar: teacherFemale,
     },
     {
-      name: "Prof. Michael Chen",
+      name: "Prof. Vikram Singh",
       position: "Science Department Head",
-      qualification: "M.Sc. Physics, Stanford University",
+      qualification: "M.Sc. Physics, IISc Bangalore",
       experience: "12",
-      specialization: ["Physics", "Astronomy", "Research"],
+      specialization: ["Physics", "NEET/JEE Preparation", "Research Methodology"],
       avatar: teacherMale,
     },
     {
       name: "Ms. Anjali Reddy",
-      position: "English & Literature Teacher",
-      qualification: "M.A. English Literature, Oxford",
+      position: "English & Social Studies Teacher",
+      qualification: "M.A. English Literature, Delhi University",
       experience: "10",
-      specialization: ["Creative Writing", "Public Speaking"],
+      specialization: ["Creative Writing", "Public Speaking", "Debate"],
       avatar: teacherFemale,
     },
   ];
@@ -129,28 +128,28 @@ export default function Home() {
   const events = [
     {
       title: "Annual Sports Day",
-      description: "Join us for a day of athletic competitions, team spirit, and celebration of sportsmanship.",
-      date: "December 15, 2024",
+      description: "A day of athletic competitions, inter-house challenges, and celebration of sportsmanship and teamwork.",
+      date: "15th December 2024",
       time: "9:00 AM - 4:00 PM",
-      location: "Main Sports Ground",
+      location: "School Sports Complex",
       category: "Sports",
       image: sportsImage,
     },
     {
-      title: "Science Exhibition",
-      description: "Student projects showcasing innovative solutions and scientific discoveries.",
-      date: "December 20, 2024",
+      title: "Science & Innovation Fair",
+      description: "Student projects showcasing innovative solutions, working models, and scientific research.",
+      date: "20th December 2024",
       time: "10:00 AM - 2:00 PM",
       location: "School Auditorium",
       category: "Academic",
       image: labImage,
     },
     {
-      title: "Cultural Fest",
-      description: "Celebrating diversity through music, dance, drama, and art performances.",
-      date: "January 10, 2025",
-      time: "5:00 PM - 8:00 PM",
-      location: "Open Air Theatre",
+      title: "Republic Day Celebrations",
+      description: "Patriotic cultural program featuring classical and folk performances, parade, and prize distribution ceremony.",
+      date: "26th January 2025",
+      time: "8:00 AM - 12:00 PM",
+      location: "School Assembly Ground",
       category: "Cultural",
       image: assemblyImage,
     },
@@ -161,8 +160,8 @@ export default function Home() {
       <Header />
       
       <HeroSection
-        title="Empowering Future Leaders Through Excellence in Education"
-        subtitle="Join our community of 5000+ successful students. Experience world-class education with modern facilities, experienced faculty, and comprehensive programs from Pre-K to Grade 12."
+        title="Nurturing Excellence, Shaping Future Leaders"
+        subtitle="Join our community of 3500+ successful students. CBSE affiliated school offering holistic education from Nursery to Class XII with state-of-the-art facilities, experienced faculty, and proven track record of 98.5% board results."
         image={heroImage}
       />
       
@@ -240,8 +239,8 @@ export default function Home() {
 
       <CTASection
         title="Begin Your Journey to Excellence"
-        description="Join our community of successful students and experience world-class education. Applications now open for 2024-25 academic year."
-        primaryButton={{ text: "Apply Now", href: "/admissions" }}
+        description="Join our community of achievers and experience world-class education. Admissions open for Academic Year 2025-26. Limited seats available."
+        primaryButton={{ text: "Apply for Admission", href: "/admissions" }}
         secondaryButton={{ text: "Schedule Campus Visit", href: "/contact" }}
         variant="primary"
       />

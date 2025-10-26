@@ -88,11 +88,11 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                <span>123 Education Lane, Green Valley, Mumbai - 400001</span>
+                <span>Plot No. 45, Sector 21, Dwarka, New Delhi - 110075</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0" />
-                <a href="tel:+912212345678" className="hover:text-foreground">+91 22 1234 5678</a>
+                <a href="tel:+911125123456" className="hover:text-foreground">+91 11 2512 3456</a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0" />
