@@ -65,18 +65,18 @@ export default function Contact() {
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-orange-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       <Header />
       
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-saffron via-orange-600 to-amber-600 bg-clip-text text-transparent dark:from-amber-400 dark:via-orange-500 dark:to-saffron">
+          <div className="text-center mb-8 sm:mb-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-saffron via-orange-600 to-amber-600 bg-clip-text text-transparent dark:from-amber-400 dark:via-orange-500 dark:to-saffron">
               Contact Us
             </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Have questions about admissions, our programs, or want to schedule a visit? We're here to help!
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
             <Card className="border-amber-200 dark:border-amber-800" data-testid="card-contact-info-address">
               <CardHeader className="text-center">
                 <MapPin className="w-12 h-12 mx-auto mb-4 text-saffron" />

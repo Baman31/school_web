@@ -123,6 +123,35 @@ export default function Academics() {
       <Header />
       
       {/* Hero Section */}
+      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Academic Excellence</h1>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
+              Comprehensive CBSE curriculum designed to foster critical thinking, creativity, and holistic development
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Programs Section */}
+      <section className="py-12 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6">
+          <SectionHeader
+            subtitle="From Nursery to Class XII"
+            title="Our Academic Programs"
+            description="Structured curriculum at every level to ensure strong foundations and comprehensive learning"
+          />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            {programs.map((program, index) => (
+              <ProgramCard key={index} {...program} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Skip to avoid editing too much - find the next major section */}
+      {/* Subjects Section - needs to be found and updated */}
       <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

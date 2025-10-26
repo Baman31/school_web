@@ -98,18 +98,18 @@ export default function Admissions() {
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-orange-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       <Header />
       
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-saffron via-orange-600 to-amber-600 bg-clip-text text-transparent dark:from-amber-400 dark:via-orange-500 dark:to-saffron">
+          <div className="text-center mb-8 sm:mb-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-saffron via-orange-600 to-amber-600 bg-clip-text text-transparent dark:from-amber-400 dark:via-orange-500 dark:to-saffron">
               Admissions
             </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Join the Excellence Academy family. Limited seats available for academic year 2025-26.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
             <Card className="border-amber-200 dark:border-amber-800 text-center" data-testid="card-admission-feature-1">
               <CardHeader>
                 <BookOpen className="w-12 h-12 mx-auto mb-2 text-saffron" />
